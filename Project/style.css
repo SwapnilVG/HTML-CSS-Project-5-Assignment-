@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+}
+
+nav{
+    margin: 20px;
+    height: 4vh;    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    list-style: none;
+    float: right;
+    cursor: pointer;    
+}
+
+.home{
+    padding: 5px 10px;
+    background: rgb(100, 100, 224);
+    border-radius: 15px;
+}
+nav img{
+    display: none;
+}
+
+.content{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    margin-bottom: 12vh;
+}
+
+.left-content img + p{
+    display: inline;
+}
+.left-content p{
+    font-weight: 700;
+}
+.heading{
+    font-size: 26px;  
+}
+.dev{
+    font-size: 35px;
+    color: rgb(197, 197, 89);
+    font-weight: 700;
+}
+.right-content img{
+    cursor: pointer;
+}
+.line{
+    height: 10px;
+    width: 135px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;  
+}
+
+.Projects{
+    text-align: center;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.contact h1{
+    font-size: 40px;
+}
+.contact-line{
+    height: 10px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;  
+}
+
+footer{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.social{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:560px){
+    nav ul{
+        display: none;
+    }
+    nav img{
+        display: block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    
+    .content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        margin-bottom: 12vh;
+        flex-wrap: wrap;
+    }
+
+    .left-content img{    
+        display: block;
+        margin-left: 115px;
+        line-height: 35px;           
+    }
+
+    .right-content img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .list{
+        display: grid;
+        grid-template-columns: 1fr ;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
